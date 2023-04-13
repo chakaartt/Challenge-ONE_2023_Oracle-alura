@@ -1,0 +1,138 @@
+html {
+  background-color: #e5e5e5;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+/* menu esquerdo */
+.menu-left .centro .logo {
+  position: absolute;
+  top: 40px;
+  left: 84px;
+}
+
+.menu-left .centro h2 {
+  color: #0a3871;
+  position: absolute;
+  top: 440px;
+  left: 350px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 930px;
+  left: 250px;
+}
+
+.icon .icon-exclamacao {
+  padding-right: 8px;
+}
+
+.icon h3 {
+  font-size: 12px;
+  color: #495057;
+  opacity: 0.8;
+}
+
+/* butões começa aqui */
+.btn-button {
+  position: absolute;
+  top: 885px;
+  left: 240px;
+  padding: 72px 0;
+}
+
+.btn-button .button-left {
+  background: #0a3871;
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+  font-size: 16px;
+  text-align: center;
+  color: #e5e5e5;
+  border: 1px solid #fefefe;
+  margin-right: 24px;
+}
+.btn-button .button-right {
+  background: #d8dfe8;
+  border-radius: 24px;
+  width: 328px;
+  height: 67px;
+  font-size: 16px;
+  text-align: center;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+  margin-right: 80px;
+}
+
+/* menu direito */
+
+.menu-right {
+  background-color: #fff;
+  position: absolute;
+  width: 400px;
+  height: 944px;
+  left: 1000px;
+  top: 40px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  padding: 40px;
+}
+
+.padlock img {
+  width: 335px;
+  height: 250px;
+  position: absolute;
+  left: 80px;
+  top: 283px;
+}
+
+.menu-right .camp-white .text-caixa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  position: absolute;
+  top: 619px;
+  left: 55px;
+}
+
+.menu-right .camp-white .text-caixa h2 {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
+  margin-right: 60px
+}
+
+.menu-right .camp-white .text-caixa h4 {
+  font-size: 16px;
+line-height: 150%;
+text-align: center;
+color:  #495057;
+margin-right: 60px;
+}
+
+/* butão de esconde */
+
+.menu-right .button-hidden {
+  position: absolute;
+  top: 915px;
+  left: 85px;
+}
+
+  .menu-right .button-hidden .btn-hidden { 
+    width: 336px;
+    height: 67px;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+border-radius: 24px;
+  }
