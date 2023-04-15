@@ -1,10 +1,10 @@
 html {
-  background-color: #e5e5e5;
-  font-family: "inter", sans-serif;
-  font-weight: 400;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(0deg, #8EC5FC 0%, #E0C3FC 100%);
+  font-family:"inter", sans-serif;
+  font-weight:400;
   font-size: 32px;
   line-height: 150%;
-
 }
 
 /* menu esquerdo */
@@ -14,13 +14,29 @@ html {
   left: 84px;
 }
 
-.menu-left .centro h2 {
+.menu-left .centro > label {
   color: #0a3871;
   position: absolute;
   top: 100px;
   left: 350px;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.menu-left .centro .text__digit {
+  position: absolute;
+  left: 23%;
+  top: 150px;
+  width: 35%;
+  height: 30%;
+  border-radius: 25px;
+  
+}
+
+.menu-left .centro .text__digit {
+  resize: none;
+  font-size: 30px;
+  text-align: center;
 }
 
 .icon {
@@ -86,12 +102,27 @@ html {
   padding: 40px;
 }
 
-.padlock img {
+.padlock #lock {
   width: 335px;
   height: 250px;
   position: absolute;
   left: 80px;
   top: 100px;
+}
+.local-mensagem {
+  
+    left: 5%;
+    top: 27px;
+    width: 90%;
+    height: 44%;
+    border: none;
+    resize: none;
+    padding: 0 22px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #01172d;
+    border-radius: 25px;
+    
 }
 
 .menu-right .camp-white .text-caixa {

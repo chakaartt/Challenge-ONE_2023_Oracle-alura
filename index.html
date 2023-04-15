@@ -18,7 +18,8 @@
   <div class="menu-left">
     <div class="centro">
       <img class="logo" src="./img/logo.png" alt="logo da alura-cursos">
-      <h2>Digite seu texto</h2>
+      <label>Digite seu texto</label>
+      <textarea class="text__digit" name="text" id="Digit" cols="30" rows="6" placeholder="Digite Aqui "  minlength="5" maxlength="235"></textarea>
     </div>
 
     <div class="icon">
@@ -27,24 +28,30 @@
     </div>
 
     <div class="btn-button">
-      <button class="button-left" >Criptografar</button>
+      <button class="button-left" onclick="btnEncriptar()" >Criptografar</button>
+
       <button class="button-right">Descriptografar</button>
     </div>
   </div>
 
   <div class="menu-right">
-    <div class="camp-white">
+    <div class="camp-white" id="myHidden">
       <div class="padlock">
-        <img src="./img/lock.gif" alt="">
+        <img id="lock" src="./img/lock.gif" alt="cardeado balançando e abrindo">
       </div>
       <div class="text-caixa">
         <h2>Nenhuma mensagem encontrada</h2>
         <h4>Digite um texto que você deseja criptografar ou descriptografar.</h4>
       </div>
+    </div>
 
-      <div class="button-hidden">
-        <button class="btn-hidden">Copiar</button>
-      </div>
+    
+    <div class="caixa-mensagem">
+      <textarea class="local-mensagem" cols="30" rows="6" minlength="5" maxlength="190"></textarea>
+    </div>
+
+    <div class="button-hidden">
+      <button class="btn-hidden">Copiar</button>
     </div>
   </div>
 
