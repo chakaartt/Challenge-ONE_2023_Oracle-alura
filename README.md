@@ -16,3 +16,5 @@ Este é um projeto desenvolvido como parte do desafio ONE da Sprint 01. O objeti
 
 ## Considerações finais
 Este projeto foi uma ótima oportunidade para aprender mais sobre JavaScript e criptografia de texto. Durante o desenvolvimento, tive dificuldades para resolver um problema com o método replaceAll(), mas depois de várias tentativas, consegui encontrar uma solução. Foi uma ótima experiência de aprendizado!
+
+![Alt Text](https://i.imgur.com/SHzUPHJ.png)
