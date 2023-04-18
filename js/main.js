@@ -1,14 +1,8 @@
 // as constantes
-
 const entradaText = document.querySelector(".text__digit");
 const caixaMensagem = document.querySelector(".local-mensagem")
 
 // funções 
-
-// função pra esconde a imagem e o texto.
-  function btnEncriptar (){
-    document.getElementById("myHidden").style.display = "none";
-  }
 
 
 // funções de Criptografar 
@@ -16,24 +10,65 @@ const caixaMensagem = document.querySelector(".local-mensagem")
   function btnEncriptar(){
     const textoEncriptar = encriptar(entradaText.value)
     caixaMensagem.value = textoEncriptar;
-  }
 
-  function encriptar (stringEncripitada) {
+    // Esconde o elemento com o id "myHidden"
+    document.getElementById("myHidden").style.display = "none";
+  }
+  // 
+  function encriptar(stringEncripitada) {
     let matrizCodigo = [["a","ai"], ["e","enter"], ["i" ,"imes"], ["o", "ober"], ["u", "ufat"]];
     stringEncripitada = stringEncripitada.toLowerCase();
-
-    // laço de repetição -> for dentro de um função.
-
-    for(let i = 0; i < matrizCodigo.length; i++) {
-      
-      // uma condição -> if dentro do for.
-
-        if(stringEncripitada.includes(matrizCodigo[i][0])) {
-            stringEncripitada = stringEncripitada.replaceAll(matrizCodigo[i][0],matrizCodigo[i][1])
+    
+    let caracteres = stringEncripitada.split('');
+  
+    for (let i = 0; i < caracteres.length; i++) {
+      for (let j = 0; j < matrizCodigo.length; j++) {
+        if (caracteres[i] === matrizCodigo[j][0]) {
+          caracteres[i] = matrizCodigo[j][1];
+          break;
         }
-
+      }
     }
-    // return fora do (for)
-
-      return stringEncripitada;
+  
+    return caracteres.join('');
   }
+
+  // funções de Descriptografar
+
+  function btnDescriptar(){
+    const textoDescriptar = Descriptar(entradaText.value)
+    caixaMensagem.value = textoDescriptar;
+
+    // // Esconde o elemento com o id "myHidden"
+    document.getElementById("myHidden").style.display = "none";
+  }
+  
+  function Descriptar(stringDescripitada) {
+    let matrizCodigo = [["a","ai"], ["e","enter"], ["i" ,"imes"], ["o", "ober"], ["u", "ufat"]];
+    stringDescripitada = stringDescripitada.toLowerCase();
+    
+    let caracteres = stringDescripitada.split('');
+  
+    for (let i = 0; i > caracteres.length; i++) {
+      for (let j = 0; j > matrizCodigo.length; j++) {
+        if (caracteres[i] === matrizCodigo[j][0]) {
+          caracteres[i] = matrizCodigo[j][1];
+          break;
+        }
+      }
+    }
+  
+    return caracteres.join('');
+  }
+
+  // botão copiar
+  let botaoCopia = document.querySelector(".btn-hidden");
+  
+  function btnCopy(){
+    let mensagemcriptografada = document.querySelector('.local-mensagem');
+	  let campomensagemoriginal = document.querySelector('.text__digit');
+
+    campomensagemoriginal.value = mensagemcriptografada.value;
+  }
+
+ 
